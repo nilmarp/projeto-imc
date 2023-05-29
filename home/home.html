@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC online</title>
+
+    <link rel="stylesheet" type="text/css"" href=" style.css">
+    <script src="../scripts/script.js"></script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <a href="home.html"><img src="../img/logo.png" id="logo-header"></a>
+    </header>
+
+    <h1 id="o-que-imc-img">O que é IMC?</h1>
+    <section id="sinopse">
+        <p> &nbsp;O cálculo do Índice de Massa Corpórea (IMC) é um parâmetro adotado pela Organização Mundial de
+            Saúde
+            para
+            estimar o peso ideal de uma pessoa. O resultado obtido é um indicador que pode ser usado para avaliar se
+            o
+            peso da pessoa está
+            dentro do intervalo considerado saudável.
+
+            Para calcular o seu IMC, insira o seu peso e altura nos campos abaixo e compare o resultado com os
+            valores
+            da tabela. Use pontos como separadores, seguindo os exemplos apresentados.</p>
+    </section>
+
+    <div class="grid">
+        <div>
+            <section id="calculadora">
+                <img src="../img/calcule-seu-imc.png" style="width: 250px; margin-bottom: 30px;">
+
+                <form id="imcForm" name="imcForm" action="#">
+                    <label for="altura">Sua altura (ex.: 1,70) </label><br>
+                    <input type="text" id="altura" name="altura"><br>
+                    <br>
+                    <label for="peso">Seu peso (ex.: 70,5) </label><br>
+                    <input type="text" id="peso" name="peso">
+                </form>
+
+                <input type="submit" value="Calcular >" id="calcular" onclick="calcularImc()">
+            </section>
+        </div>
+        
+        <div>
+            <section id="tabela">
+                <h1>Interpretação do cálculo:</h1><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Índice de Massa Corpórea (IMC)</th>
+                            <th>Classificação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Menor que 18,5</td>
+                            <td>Abaixo do peso</td>
+                        </tr>
+                        <tr>
+                            <td>18,5 - 24,9</td>
+                            <td>Peso normal</td>
+                        </tr>
+                        <tr>
+                            <td>25,0 - 29,9</td>
+                            <td>Sobrepeso</td>
+                        </tr>
+                        <tr>
+                            <td>30,0 - 34,9</td>
+                            <td>Obesidade grau 1</td>
+                        </tr>
+                        <tr>
+                            <td>35,0 - 39,9</td>
+                            <td>Obesidade grau 2</td>
+                        </tr>
+                        <tr>
+                            <td>Maior ou igual a 40,0</td>
+                            <td>Obesidade grau 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="resultado">
+            </section>
+        </div>
+    </div>
+    <br><br><br>
+
+</body>
+
+</html>
